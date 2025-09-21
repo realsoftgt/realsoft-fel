@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "tipoDTE": {
+      "type": "string"
+    },
+    "emisor": {
+      "type": "object",
+      "properties": {
+        "nit": {
+          "type": "string"
+        },
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nit",
+        "nombre"
+      ]
+    },
+    "receptor": {
+      "type": "object",
+      "properties": {
+        "nit": {
+          "type": "string"
+        },
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nit",
+        "nombre"
+      ]
+    },
+    "totales": {
+      "type": "object",
+      "properties": {
+        "montoTotal": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "montoTotal"
+      ]
+    }
+  },
+  "required": [
+    "tipoDTE",
+    "emisor",
+    "receptor",
+    "totales"
+  ]
+}
